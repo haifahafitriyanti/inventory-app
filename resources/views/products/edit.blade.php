@@ -60,7 +60,7 @@ Update Data Product
             rows="3">{{ old('description', $product->description) }}</textarea>
     </div>
 
-    <a href="/products" class="btn btn-secondary">Batal</a>
+    <a href="/products" class="btn btn-danger">Batal</a>
     <button type="submit" class="btn btn-primary">Update</button>
 </form>
 @endsection

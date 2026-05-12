@@ -50,5 +50,6 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Simpan</button>
+    <a href="/products" class="btn btn-secondary">Back</a>
 </form>
 @endsection

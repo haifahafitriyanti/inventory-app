@@ -33,7 +33,7 @@
 </div>
 @endif
 
-<a href="/create" class="btn btn-primary mb-3">Tambah Data</a>
+<a href="/create" class="btn btn-secondary mb-3">Tambah Data Baru</a>
 
 <table class="table table-striped">
     <thead>
@@ -51,7 +51,7 @@
     <tbody>
         @foreach($products as $p)
         <tr>
-            <td>{{ $loop->iteration }}</td>
+            <td>{{ $loop->iteration + ($products->currentPage() - 1) * $products->perPage()}}</td>
             <td>{{ $p->name }}</td>
             <td>{{ $p->category->name }}</td>
             <td>Rp {{ number_format($p->price) }}</td>
